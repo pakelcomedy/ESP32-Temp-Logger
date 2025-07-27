@@ -1,0 +1,12 @@
+[package]
+name = "esp32-temp-logger"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+esp32-hal = { version = "0.17.0", features = ["rt", "xtensa"] }
+embedded-hal = "1.0.0"
+panic-halt = "0.2.0"
+
+[profile.release]
+opt-level = "s"

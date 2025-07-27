@@ -1,0 +1,7 @@
+/* Minimal linker script for ESP32 */
+MEMORY
+{
+  IRAM       : ORIGIN = 0x40000000, LENGTH = 0x20000
+  DRAM       : ORIGIN = 0x3FFB0000, LENGTH = 0x40000
+  RTC_FAST_MEM : ORIGIN = 0x50000000, LENGTH = 0x2000
+}
